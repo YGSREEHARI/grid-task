@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .md{
+            background-color: white;
+            display: grid;
+            gap: 10px;
+            padding: 20px;
+            grid-template-areas: 
+            "area1 area2 area2 area3 area4 area4 area5 area5 area5 area6"
+            "area7 area8 area8 area8 area4 area4 area5 area5 area5 area6";
+            grid-template-rows: 30px 80px;
+
+        }
+        .o1{
+            background-color: blue;
+            grid-area: area1;
+        }
+        .o2{
+            background-color: greenyellow;
+            grid-area: area2;
+            
+        }
+        .o3{
+            background-color: red;
+            grid-area: area3;
+        }
+        .o4{
+            background-color: gold;
+            grid-area: area4;
+        }
+        .o5{
+            background-color: brown;
+            grid-area: area5;
+        }
+        .o6{
+            background-color: grey;
+            grid-area: area6;
+            width: 30px;
+        }
+        .o7{
+            background-color: violet;
+            grid-area: area7;
+        }
+        .o8{
+            background-color:purple;
+            grid-area: area8;
+        }
+        div{
+            border-radius: 20px;
+            align-content: center;
+            text-align: center;
+        }
+
+
+
+    </style>
+</head>
+<body>
+   <div class="md">
+    <div class="o1">1</div>
+    <div class="o2">2</div>
+    <div class="o3">3</div>
+    <div class="o4">4</div>
+    <div class="o5">5</div>
+    <div class="o6">6</div>
+    <div class="o7">7</div>
+    <div class="o8">8</div>
+   
+   </div> 
+</body>
+</html>
