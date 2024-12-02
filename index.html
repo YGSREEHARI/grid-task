@@ -7,13 +7,14 @@
     <style>
         .md{
             background-color: white;
+            border: 2px solid white;
             display: grid;
             gap: 10px;
             padding: 20px;
             grid-template-areas: 
             "area1 area2 area2 area3 area4 area4 area5 area5 area5 area6"
             "area7 area8 area8 area8 area4 area4 area5 area5 area5 area6";
-            grid-template-rows: 30px 80px;
+            grid-template-rows: 50px 80px;
 
         }
         .o1{
@@ -51,16 +52,98 @@
             grid-area: area8;
         }
         div{
-            border-radius: 20px;
+          
             align-content: center;
             text-align: center;
+        }.me{
+            border: 2px solid white;
+            display: grid;
+            gap: 10px;
+            grid-template-rows: 50px 50px 50px ;
+            grid-template-areas:
+             "area01 area02 area02 area03"
+             "area01 area04 area05 area06"
+             "area01 area07 area08 area06"
+            ;
+
+
         }
+        .a1{
+            background-color:green;  
+            grid-area: area01;
+        }
+        .a2{
+            background-color:green;
+            grid-area: area02;  
+        }
+        .a3{
+            background-color:red; 
+            grid-area: area03;   
+        }
+        .a4{
+            background-color: orange;
+            grid-area: area04;    
+        }
+        .a5{
+            background-color:red;
+            grid-area: area05;    
+        }
+        .a6{
+            background-color:green;
+            grid-area:area06 ;  
+        }
+        .a7{
+            background-color: red;
+            grid-area:area07 ;  
+        }
+        .a8{
+            background-color:orange;
+            grid-area:area08 ;  
+        }
+        .mf{
+            border: 2px solid white;
+            display: grid;
+            gap: 10px;
+            grid-template-rows: 50px 50px 50px;
+            grid-template-areas: 
+            "area11 area12 area13"
+            "area14 area15 area15"
+            "area16 area15 area15";
+        }
+        .b1{
+            background-color: lightgreen;
+            grid-area: area11;
+        }
+        .b2{
+            background-color: orange;
+            grid-area: area12;
+        }
+        .b3{
+            background-color: purple;
+            grid-area: area13;
+        }
+        .b4{
+            background-color:blue;
+            grid-area: area14;
+        }
+        .b5{
+            background-color: gold;
+            grid-area: area15;
+        }
+        .b6{
+            background-color: purple;
+            grid-area: area16;
+        }
+
+        
+    
 
 
 
     </style>
 </head>
 <body>
+    <center><h1> A DEEP DIVE INTO CSS GRID</h1></center>
    <div class="md">
     <div class="o1">1</div>
     <div class="o2">2</div>
@@ -71,6 +154,25 @@
     <div class="o7">7</div>
     <div class="o8">8</div>
    
-   </div> 
+   </div> <br><br><br>
+   <div class="me">
+    <div class="a1">01</div>
+    <div class="a2">01</div>
+    <div class="a3">03</div>
+    <div class="a4">04</div>
+    <div class="a5">05</div>
+    <div class="a6">06</div>
+    <div class="a7">07</div>
+    <div class="a8">08</div>
+   </div>
+   <br><br><br>
+   <div class="mf">
+    <div class="b1">11</div>
+    <div class="b2">12</div>
+    <div class="b3">13</div>
+    <div class="b4">14</div>
+    <div class="b5">15</div>
+    <div class="b6">16</div>    
+   </div>
 </body>
 </html>
